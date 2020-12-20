@@ -22,6 +22,7 @@ variable "inport" {
 variable "inprot" {
   default = "-1"
 }
+
 variable "secgrp" {
 }
 
@@ -32,8 +33,6 @@ variable "egprot" {
   default = "-1"
 }
 
-/*
-variable "ingress" {
-  default = [{port=80,prot="tcp"},{port=22,prot="tcp"}]
+variable "ingressmap" {
+  default = [{inport=80,inprot="tcp"},{inport=22,inprot="tcp"}]
 }
-*/
