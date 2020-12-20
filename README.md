@@ -16,7 +16,9 @@ $ git tag -a "v4.1" -m "ver 4.1"
 # Using Terraform-modules tag 4.x
 
 $ cat main.tf
+
 module "aws-compute" {
+
 // Modules starting 4.x are for production
 
   source = "git::https://github.com/sajidmehdi14/Terraform-modules.git//aws_EC2?ref=v4.1"
@@ -91,6 +93,7 @@ provider "aws" {
 provider "google" {
 
 //  region = "us-east4"
+
 //  zone = "us-east4"
 
   region  = "us-central1"
