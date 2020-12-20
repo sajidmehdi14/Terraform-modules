@@ -1,4 +1,5 @@
-# Adding/ Updating Terraform-modules for multi cloud and multi regions cloud infrastructures resources/sevices deployments.
+# Adding/ Updating Terraform-modules for multi cloud 
+# And multi region infrastructures resources/sevices deployments.
 
 $ git clone https://github.com/sajidmehdi14/Terraform-modules
 
