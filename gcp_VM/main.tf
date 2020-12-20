@@ -1,10 +1,8 @@
-resource "google_compute_instance" "gcp_vm" {
-  machine_type = var.machine
-  name = var.name
+resource "google_compute_instance" "gcp-vm" {
+  machine_type = var.compute
+  name = var.vmname
   boot_disk {
-    initialize_params {
-      image = var.image
-    }
+    source = var.gcpimage
   }
   network_interface {
     network = var.gcpnet

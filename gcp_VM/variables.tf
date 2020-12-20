@@ -1,12 +1,13 @@
-variable "machine" {}
+variable "compute" {}
 
-variable "name" {}
+variable "vmname" {}
 
-variable "image" {}
+variable "gcpimage" {}
 
 variable "gcpnet" {
-  default = "default"
+  default = "network"
 }
-variable "gcpsub" {
+
+variable "gcpsub"{
   default = ""
 }
