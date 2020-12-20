@@ -42,6 +42,7 @@ module "aws-compute" {
   tags = "ec2-prod"
 
 }
+
 #############################################
 
 $ cat variable.tf
@@ -68,6 +69,7 @@ variable "ingressprod" {
   default = [{inport=80,inprot="tcp"},{inport=22,inprot="tcp"}]
   
 }
+
 #############################################
 
 $ cat provider.tf
@@ -111,6 +113,7 @@ provider "azurerm" {
  features {}
  
 }
+
 #######################################
 
 
